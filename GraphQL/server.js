@@ -6,10 +6,10 @@ const app = express();
 
 // Development server property.
 app.use('/graphql', expressGraphQL({
-    schema,
-    graphiql: true
+	schema,
+	graphiql: true
 }));
 
 app.listen(4000, () => {
-    console.log('Server started at 4000');
+	console.log('Server started at 4000');
 });
